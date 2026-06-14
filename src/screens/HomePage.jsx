@@ -1,30 +1,55 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { useRef } from 'react'
+import reactLogo from '../assets/react.svg'
+import viteLogo from '../assets/vite.svg'
+import heroImg from '../assets/hero.png'
+import '../styles/App.css'
+import useAppContext from '../hooks/useAppContext'
+import ProductList from '../components/ProductList'
 
-function App() {
-  const [ count, setCount ] = useState(0);
+function HomePage() {
+  // States
+  const { count, handleCount } = useAppContext()
+  // const [count, setCount] = useState(0)
+  const inputRef = useRef(null)
 
+
+  // useEffect(() => {
+  //   console.log(inputRef.current)
+  // }, [count])
+
+  // Functions / Handlers
+  const handleClick = () => {
+    handleCount('123123123123asdasd')
+  }
+
+  // Maquetado
   return (
     <>
       <section id="center">
         <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
+          <img src={heroImg} className="base" width="170" height="179" alt=""/>
           <img src={reactLogo} className="framework" alt="React logo" />
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
         <div>
-          <h1>Get started 123</h1>
+          <h1>Get started</h1>
           <p>
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
         </div>
+
+        <input
+          ref={inputRef}
+          type="color"
+          name=""
+          id=""
+          onChange={(input) => console.log(input.target.value)}
+          />
+
         <button
           type="button"
           className="counter"
-          onClick={() => setCount((count) => count + 1)}
+          onClick={handleClick}
         >
           Count is {count}
         </button>
@@ -114,9 +139,10 @@ function App() {
       </section>
 
       <div className="ticks"></div>
+      <ProductList />
       <section id="spacer"></section>
     </>
   )
 }
 
-export default App
+export default HomePage

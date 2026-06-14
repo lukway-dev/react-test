@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Auriculares Bluetooth Pro",
+    "category": "Electrónica",
+    "price": 89.99,
+    "stock": 42,
+    "rating": 4.5,
+    "image": "https://placehold.co/300x300?text=Auriculares",
+    "description": "Auriculares inalámbricos con cancelación de ruido y 30h de batería."
+  },
+  {
+    "id": 2,
+    "name": "Mochila Urbana 25L",
+    "category": "Accesorios",
+    "price": 49.99,
+    "stock": 118,
+    "rating": 4.2,
+    "image": "https://placehold.co/300x300?text=Mochila",
+    "description": "Mochila resistente al agua con puerto USB integrado y compartimento para laptop."
+  },
+  {
+    "id": 3,
+    "name": "Lámpara LED Escritorio",
+    "category": "Hogar",
+    "price": 34.50,
+    "stock": 75,
+    "rating": 4.7,
+    "image": "https://placehold.co/300x300?text=Lampara",
+    "description": "Lámpara de escritorio con 5 niveles de brillo y temperatura de color ajustable."
+  },
+  {
+    "id": 4,
+    "name": "Zapatillas Running X200",
+    "category": "Deportes",
+    "price": 129.00,
+    "stock": 33,
+    "rating": 4.6,
+    "image": "https://placehold.co/300x300?text=Zapatillas",
+    "description": "Zapatillas ligeras con suela antideslizante para running en cualquier superficie."
+  },
+  {
+    "id": 5,
+    "name": "Taza Térmica 500ml",
+    "category": "Hogar",
+    "price": 19.99,
+    "stock": 200,
+    "rating": 4.3,
+    "image": "https://placehold.co/300x300?text=Taza",
+    "description": "Mantiene bebidas calientes hasta 8 horas y frías hasta 12 horas."
+  },
+  {
+    "id": 6,
+    "name": "Teclado Mecánico RGB",
+    "category": "Electrónica",
+    "price": 74.99,
+    "stock": 27,
+    "rating": 4.8,
+    "image": "https://placehold.co/300x300?text=Teclado",
+    "description": "Teclado mecánico compacto con switches Red y retroiluminación RGB personalizable."
+  },
+  {
+    "id": 7,
+    "name": "Libro: Clean Code",
+    "category": "Libros",
+    "price": 24.95,
+    "stock": 60,
+    "rating": 4.9,
+    "image": "https://placehold.co/300x300?text=Libro",
+    "description": "Guía esencial de buenas prácticas para escribir código limpio y mantenible."
+  },
+  {
+    "id": 8,
+    "name": "Soporte Ergonómico Monitor",
+    "category": "Accesorios",
+    "price": 39.00,
+    "stock": 55,
+    "rating": 4.4,
+    "image": "https://placehold.co/300x300?text=Soporte",
+    "description": "Soporte ajustable de aluminio compatible con monitores de hasta 32 pulgadas."
+  }
+]
