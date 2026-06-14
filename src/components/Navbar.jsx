@@ -11,6 +11,7 @@ const CartIcon = () => (
 )
 
 function Navbar() {
+  // Leemos el estado global directamente desde el contexto, sin recibir props.
   const { cart } = useAppContext()
 
   return (
@@ -21,6 +22,7 @@ function Navbar() {
 
       <ul className="navbar__links">
         <li>
+          {/* NavLink resalta el enlace de la ruta actual: className recibe { isActive } y devuelve la clase */}
           <NavLink to="/" end className={({ isActive }) => isActive ? "navbar__link navbar__link--active" : "navbar__link"}>
             Home
           </NavLink>
@@ -34,6 +36,7 @@ function Navbar() {
 
       <NavLink to="/cart" className="navbar__cart">
         <CartIcon />
+        {/* Renderizado condicional: el badge solo aparece si hay items en el carrito */}
         {cart.length > 0 && (
           <span className="navbar__cart-badge">{cart.length}</span>
         )}

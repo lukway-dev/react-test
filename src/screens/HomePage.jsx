@@ -1,28 +1,22 @@
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import reactLogo from '../assets/react.svg'
 import viteLogo from '../assets/vite.svg'
 import heroImg from '../assets/hero.png'
 import '../styles/App.css'
-import useAppContext from '../hooks/useAppContext'
 import ProductList from '../components/ProductList'
 
 function HomePage() {
-  // States
-  const { count, handleCount } = useAppContext()
-  // const [count, setCount] = useState(0)
+  // useState: estado local del componente. `count` es el valor, `setCount` lo actualiza.
+  const [count, setCount] = useState(0)
+
+  // useRef: referencia mutable que NO provoca re-render. Útil para acceder a un nodo del DOM.
   const inputRef = useRef(null)
 
-
-  // useEffect(() => {
-  //   console.log(inputRef.current)
-  // }, [count])
-
-  // Functions / Handlers
+  // Actualizamos el estado en base al valor anterior (forma recomendada para incrementos).
   const handleClick = () => {
-    handleCount('123123123123asdasd')
+    setCount(prev => prev + 1)
   }
 
-  // Maquetado
   return (
     <>
       <section id="center">
